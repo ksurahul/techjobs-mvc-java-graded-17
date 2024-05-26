@@ -31,7 +31,7 @@ public class SearchController {
         ArrayList<Job> jobs; // declare jobs
 
         // checks if user wants all to see all jobs or specifics
-        if (searchType.equals("all") || searchTerm.equals("all") || searchTerm.isEmpty()){
+        if (searchTerm.equals("all") || searchTerm.isEmpty()){
             jobs = JobData.findAll();
             model.addAttribute("title", "All Jobs");
         } else {
